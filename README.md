@@ -1,8 +1,9 @@
 # Homework 2: Building a Blog in Rails
 
 Due **11:59PM, Wednesday, Oct.23rd** 
-The deadline is closer than you think. Please plan accordingly.
-You can use your late days on this homework.
+-- *(The deadline is closer than you think. Please plan accordingly.)*
+
+You can use the late days you earned in previous assignments on this homework.
 
 ## Introduction
 
