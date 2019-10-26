@@ -2,12 +2,12 @@
 <html>
 
 <body>
-    <div class="container" style="margin-top:30px;">
-        <h1> Publications </h1>
-        <div class="row">
+    <div class="container">
+        <h3> Publications </h3>
+        <div class="row" align="left">
             <% @posts.each do |post| %>
                 <div class="col-sm-6">
-                        <div> <h3> <%= post.title %> </h3> </div>
+                        <div> <h6> <%= post.title %> </h6> </div>
                         <div> <%= post.content %> </div>
                         </div>
                             <%= link_to "Delete Post", "/posts/#{post.id}", method: :DELETE %> 

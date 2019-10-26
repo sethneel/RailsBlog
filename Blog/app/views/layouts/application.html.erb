@@ -8,36 +8,35 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-<nav class ="navbar navbar-blue bg-light navbar-expand-lg fixed-top">
-  <a href='#' class = "navbar-brand"> SVN </a>
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-  <span class="navbar-toggler-icon"></span>
-</button>
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav">
-      <li class="navbar-item">
-          <a href="/home" class="nav-link"> About </a>
+  <nav class ="navbar navbar-blue bg-light navbar-expand-lg fixed-top">
+    <a href='#' class = "navbar-brand"> SVN </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+            <a href="/home" class="nav-link"> About </a>
+        </li>
+        <li class="navbar-item">
+          <a href="/posts" class="nav-link"> Research </a>
+        </li>
+        <li class="navbar-item">
+        <a href="/posts" class="nav-link"> Talks & Service </a>
       </li>
       <li class="navbar-item">
-        <a href="/posts" class="nav-link"> Research </a>
-      </li>
-      <li class="navbar-item">
-      <a href="/posts" class="nav-link"> Talks & Service </a>
+      <a href="/posts" class="nav-link"> Media </a>
     </li>
-    <li class="navbar-item">
-    <a href="/posts" class="nav-link"> Media </a>
-  </li>
-    <li class="navbar-item">
-    <a href="/posts" class="nav-link"> Contact </a>
-  </li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container">
-<body>
+      <li class="navbar-item">
+      <a href="/posts" class="nav-link"> Contact </a>
+    </li>
+      </ul>
+    </div>
+  </nav>
+<body style="padding-top:70px;">
+<div class="container" align="left">
 <%= yield %>
-</body>
 </div>
+</body>
+
 </html>
