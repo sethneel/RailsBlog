@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/home', to: 'pages#home'
   # CRUD Routes
   get '/posts', to: 'posts#index'
+  get '/contact', to: 'contact#index'
   get '/posts/new', to: 'posts#new'
   post '/posts', to: 'posts#create'
   get '/posts/:id', to: 'posts#show', as: 'post'
