@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="container" style="margin-top:30px;">
+        <h1> Publications </h1>
+        <div class="row">
+            <% @posts.each do |post| %>
+                <div class="col-sm-6">
+                        <div> <h3> <%= post.title %> </h3> </div>
+                        <div> <%= post.content %> </div>
+                        </div>
+                            <%= link_to "Delete Post", "/posts/#{post.id}", method: :DELETE %> 
+                            <%= link_to "Edit Post", "/posts/#{post.id}/new", method: :GET %> 
+                        </div>
+                </div>
+            <% end %>
+        </div>
+        <div>
+            <%= link_to "Create Post", "/posts/new", method: :GET %>
+            <%= link_to "Home", "", method: :GET %>
+        </div>
+    </div>
+</body>    
+</html>

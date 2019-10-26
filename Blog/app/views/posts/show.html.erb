@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <%= "Post  #{@post.id} "%> </td> </title>
+</head>
+<body>   
+        <tr>
+            <td> <%= @post.title %> </td>
+            <td> <%= @post.content %> </td>
+        </tr>
+    <%= link_to "Back to All Posts", "/posts", method: :GET %>
+    <%= link_to "Edit Post", "/posts/#{@post.id}/new", method: :GET %>
+    <%= link_to "Delete Post", "/posts/#{@post.id}", method: :DELETE %>
+
+
+</body>    
+</html>
